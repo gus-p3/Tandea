@@ -3,45 +3,110 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tandea</title>
-  <meta name="description" content="Tandea: organiza tus tandas de forma simple, con pagos, entregas y recordatorios.">
-  <style>
-    :root { --bg:#fff; --fg:#1d2433; --muted:#5b6475; --brand:#0f766e; --card:#f3f6f8; }
-    @media (prefers-color-scheme: dark) {
-      :root { --bg:#10151c; --fg:#e8ecf2; --muted:#a3adbd; --brand:#2dd4bf; --card:#1a222d; }
-    }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
-    main { max-width: 760px; margin: 0 auto; padding: 56px 16px; }
-    h1 { font-size: 2.6rem; margin: 0 0 8px; color: var(--brand); }
-    .slogan { font-size: 1.3rem; font-weight: 600; margin: 0 0 12px; }
-    .lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 32px; }
-    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin: 32px 0; }
-    .card { background: var(--card); border-radius: 12px; padding: 18px; }
-    .card h3 { margin: 0 0 6px; }
-    .card p { margin: 0; color: var(--muted); }
-    footer { margin-top: 48px; color: var(--muted); font-size: .95rem; }
-    a { color: var(--brand); }
-  </style>
+  <title>Tandea · Organiza tus tandas</title>
+  <meta name="description" content="Tandea: organiza tus tandas en un solo lugar. Turnos, pagos, entregas y recordatorios en tu celular.">
+  <meta name="theme-color" content="#0d9488">
+  <meta property="og:title" content="Tandea · En términos de tandear, ¿tú ya tandeas?">
+  <meta property="og:description" content="Organiza tus tandas: quién paga, quién recibe y cuándo.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%230d9488'/%3E%3Ctext x='50' y='70' font-size='62' font-weight='800' text-anchor='middle' fill='white' font-family='Arial'%3ET%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main>
-    <h1>Tandea</h1>
-    <p class="slogan">En términos de tandear, ¿tú ya tandeas?</p>
-    <p class="lead">Organiza tus tandas en un solo lugar: quién paga, quién recibe y cuándo.</p>
+  <header class="nav">
+    <div class="wrap">
+      <a class="logo" href="#inicio"><span class="logo-mark">T</span> Tandea</a>
+      <ul>
+        <li><a href="#como-funciona">Cómo funciona</a></li>
+        <li><a href="#funciones">Funciones</a></li>
+        <li><a href="#faq">Preguntas</a></li>
+        <li><a href="privacidad.html">Privacidad</a></li>
+      </ul>
+    </div>
+  </header>
 
-    <div class="grid">
-      <div class="card"><h3>Tandas claras</h3><p>Crea una tanda, invita a los participantes y define el orden de entrega.</p></div>
-      <div class="card"><h3>Pagos al día</h3><p>Registra los pagos de cada turno y consulta quién está al corriente.</p></div>
-      <div class="card"><h3>Avisos a tiempo</h3><p>Recibe recordatorios de pagos y entregas directamente en tu celular.</p></div>
+  <main id="inicio">
+    <div class="hero">
+      <div class="wrap">
+        <span class="badge">Para tandas entre amigos, familia y compañeros</span>
+        <h1>En términos de tandear,<br><span>¿tú ya tandeas?</span></h1>
+        <p class="lead">Organiza tu tanda en un solo lugar: quién paga, quién recibe y cuándo. Sin libretas, sin chats perdidos, sin confusiones.</p>
+        <div class="cta-row">
+          <a class="btn" href="#como-funciona">Ver cómo funciona</a>
+          <a class="btn ghost" href="mailto:tandea048@gmail.com">Contáctanos</a>
+        </div>
+        <p class="note">App para Android · Disponible en Aptoide</p>
+      </div>
     </div>
 
-    <p>Tandea es una herramienta de organización: no mueve dinero entre personas ni lo custodia.</p>
+    <section id="como-funciona">
+      <div class="wrap center">
+        <h2>Tandear nunca fue tan fácil</h2>
+        <p class="sub">Tres pasos y tu tanda queda lista.</p>
+        <div class="steps" style="text-align:left">
+          <div class="step"><h3>Crea tu tanda</h3><p>Define el monto, la frecuencia y cuántos participantes habrá.</p></div>
+          <div class="step"><h3>Invita y ordena</h3><p>Suma a los participantes y deja claro el orden de entrega de cada quien.</p></div>
+          <div class="step"><h3>Paga y recibe</h3><p>Registra los pagos de cada turno y confirma la entrega con tu comprobante.</p></div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-      <p>Contacto: <a href="mailto:tandea048@gmail.com">tandea048@gmail.com</a></p>
-      <p><a href="privacidad.html">Política de privacidad</a></p>
-    </footer>
+    <section id="funciones" class="band">
+      <div class="wrap">
+        <div class="center">
+          <h2>Todo lo que necesita tu tanda</h2>
+          <p class="sub">Menos dudas de quién ya pagó y más tiempo para lo importante.</p>
+        </div>
+        <div class="grid">
+          <div class="card"><div class="icon">📋</div><h3>Turnos claros</h3><p>Ve en qué lugar vas y cuándo te toca recibir.</p></div>
+          <div class="card"><div class="icon">💸</div><h3>Seguimiento de pagos</h3><p>Consulta quién está al corriente y quién tiene pagos pendientes.</p></div>
+          <div class="card"><div class="icon">📸</div><h3>Comprobantes con foto</h3><p>Adjunta una foto al registrar un pago o una entrega.</p></div>
+          <div class="card"><div class="icon">🔔</div><h3>Avisos a tiempo</h3><p>Notificaciones en tu celular para pagos, entregas y recordatorios.</p></div>
+          <div class="card"><div class="icon">🗂️</div><h3>Historial completo</h3><p>Revisa cada movimiento de tu tanda cuando lo necesites.</p></div>
+          <div class="card"><div class="icon">🔒</div><h3>Tus datos protegidos</h3><p>Conexión cifrada y sin venta de información. <a href="privacidad.html">Leer más</a></p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap" style="max-width:760px">
+        <div class="center">
+          <h2>Preguntas frecuentes</h2>
+          <p class="sub">Lo que más nos preguntan.</p>
+        </div>
+        <details>
+          <summary>¿Qué es una tanda?</summary>
+          <p>Es un ahorro en grupo: cada participante aporta una cantidad cada periodo y, por turnos, uno de ellos recibe el total.</p>
+        </details>
+        <details>
+          <summary>¿Tandea maneja mi dinero?</summary>
+          <p>No. Tandea es una herramienta de organización: sirve para llevar el control de turnos, pagos y entregas, pero no mueve ni custodia dinero.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto cuesta?</summary>
+          <p>Descargar la app no tiene costo.</p>
+        </details>
+        <details>
+          <summary>¿Qué datos usa la app?</summary>
+          <p>Tu nombre, correo y la información de tus tandas. Todo el detalle está en la <a href="privacidad.html">política de privacidad</a>.</p>
+        </details>
+        <details>
+          <summary>¿Cómo borro mi cuenta o mis datos?</summary>
+          <p>Escríbenos a <a href="mailto:tandea048@gmail.com">tandea048@gmail.com</a> y los eliminamos.</p>
+        </details>
+        <details>
+          <summary>¿Necesito ayuda con la app?</summary>
+          <p>Escríbenos a <a href="mailto:tandea048@gmail.com">tandea048@gmail.com</a>. Respondemos lo antes posible.</p>
+        </details>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="wrap">
+      <div><strong>Tandea</strong><br>En términos de tandear, ¿tú ya tandeas?</div>
+      <div><a href="mailto:tandea048@gmail.com">tandea048@gmail.com</a><br><a href="privacidad.html">Política de privacidad</a></div>
+    </div>
+  </footer>
 </body>
 </html>
