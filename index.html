@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tandea</title>
+  <meta name="description" content="Tandea: organiza tus tandas de forma simple, con pagos, entregas y recordatorios.">
+  <style>
+    :root { --bg:#fff; --fg:#1d2433; --muted:#5b6475; --brand:#0f766e; --card:#f3f6f8; }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg:#10151c; --fg:#e8ecf2; --muted:#a3adbd; --brand:#2dd4bf; --card:#1a222d; }
+    }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:var(--bg); color:var(--fg); line-height:1.6; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 16px; }
+    h1 { font-size: 2.6rem; margin: 0 0 8px; color: var(--brand); }
+    .slogan { font-size: 1.3rem; font-weight: 600; margin: 0 0 12px; }
+    .lead { font-size: 1.2rem; color: var(--muted); margin: 0 0 32px; }
+    .grid { display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); margin: 32px 0; }
+    .card { background: var(--card); border-radius: 12px; padding: 18px; }
+    .card h3 { margin: 0 0 6px; }
+    .card p { margin: 0; color: var(--muted); }
+    footer { margin-top: 48px; color: var(--muted); font-size: .95rem; }
+    a { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tandea</h1>
+    <p class="slogan">En términos de tandear, ¿tú ya tandeas?</p>
+    <p class="lead">Organiza tus tandas en un solo lugar: quién paga, quién recibe y cuándo.</p>
+
+    <div class="grid">
+      <div class="card"><h3>Tandas claras</h3><p>Crea una tanda, invita a los participantes y define el orden de entrega.</p></div>
+      <div class="card"><h3>Pagos al día</h3><p>Registra los pagos de cada turno y consulta quién está al corriente.</p></div>
+      <div class="card"><h3>Avisos a tiempo</h3><p>Recibe recordatorios de pagos y entregas directamente en tu celular.</p></div>
+    </div>
+
+    <p>Tandea es una herramienta de organización: no mueve dinero entre personas ni lo custodia.</p>
+
+    <footer>
+      <p>Contacto: <a href="mailto:tandea048@gmail.com">tandea048@gmail.com</a></p>
+      <p><a href="privacidad.html">Política de privacidad</a></p>
+    </footer>
+  </main>
+</body>
+</html>
